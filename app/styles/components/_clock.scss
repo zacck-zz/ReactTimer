@@ -1,0 +1,17 @@
+.clock {
+  align-items: center; //align text vertically
+  background-color: $clock-bg-color;
+  border: 2px solid $clock-border-color; //width, as opposed to dash, color
+  border-radius: 50%;
+  display: flex; //flex box
+  height: 14rem;
+  justify-content: center;
+  margin: 4rem auto; //top & bottom, left & right
+  width: 14rem;
+}
+
+.clock-text {
+  color: $clock-text-color;
+  font-size: 2.25rem; //use the root of the browser as the default with rem to support zooming
+  font-weight: 300;
+}
