@@ -5,16 +5,16 @@ module.exports = function (config) {
     singleRun: true,
     frameworks: ['mocha'], //frameworks used in testing
     files: ['app/tests/**/*.test.jsx'], //globbing pattern
-    preprocessors: {
+    preprocessors: { //what preprocessors to use
       'app/tests/**/*.test.jsx':['webpack', 'sourcemap']
     },
-    reporters: ['mocha'],
+    reporters: ['mocha'], //what reporters to use to do reporters
     client: {
-      mocha: {
+      mocha: { //wait 5 secs to timeout tests
         timeout: '5000'
       }
     },
-    webpack:webpackConfig,
+    webpack:webpackConfig, //use the config file to load the app for testing 
     webpackServer: {
       noInfo: true
     }

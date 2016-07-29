@@ -19,7 +19,7 @@ ReactDOM.render(    //pass two args, JSX and the app element
     {/*Main component will always be rendered*/}
     <Route path="/" component={Main}>
       {/*Add Routes here */}
-      <Route path="timer" component={Timer}/>
+      <IndexRoute path="timer" component={Timer}/>
       <Route path="countdown" component={CountDown}/>
     </Route>
   </Router>,
