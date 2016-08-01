@@ -36,20 +36,20 @@ var CountDown = React.createClass({
   },
   componentWillUnmount: function() {
     /*this will be called right before the component is removed from the DOM*/
-    console.log('Component did unmount');
+    //console.log('Component did unmount');
   },
   componentWillMount: function(){
     /*this is called just before the component is shown on the screen
     N/B the DOM is not accessible at this point
     */
-    console.log('Component will mount Called');
+    //console.log('Component will mount Called');
 
   },
   componentDidMount: function(){
     /*This is called after the component is rendered
     The DOM is accessible at this point
     */
-    console.log('Component Did mount called');
+    //console.log('Component Did mount called');
   },
 
   startTimer: function () {
@@ -89,6 +89,7 @@ var CountDown = React.createClass({
     };
     return(
       <div>
+        <h1 className="page-title">CountDown App</h1>
         <Clock totalSeconds={count}/>
         {renderControlArea()}
       </div>

@@ -12,7 +12,7 @@ var Controls = React.createClass({
       }
     },
     componentWillReceiveProps: function(newProps) {
-      console.log('component will recieve update'+newProps.countdownStatus);
+      /*console.log('component will recieve update'+newProps.countdownStatus);*/
     },
     render: function() {
       /*destructure the props into variables*/
