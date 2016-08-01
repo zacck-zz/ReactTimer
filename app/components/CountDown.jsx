@@ -30,6 +30,28 @@ var CountDown = React.createClass({
       }
     }
   },
+
+  componentWillUpdate: function(nextProps, nextState){
+    /*This is called just before a component updates*/
+  },
+  componentWillUnmount: function() {
+    /*this will be called right before the component is removed from the DOM*/
+    console.log('Component did unmount');
+  },
+  componentWillMount: function(){
+    /*this is called just before the component is shown on the screen
+    N/B the DOM is not accessible at this point
+    */
+    console.log('Component will mount Called');
+
+  },
+  componentDidMount: function(){
+    /*This is called after the component is rendered
+    The DOM is accessible at this point
+    */
+    console.log('Component Did mount called');
+  },
+
   startTimer: function () {
     /*use the set Interval function and call it every second  */
     this.timer = setInterval(() => {
@@ -37,6 +59,11 @@ var CountDown = React.createClass({
       this.setState({
         count: newCount >= 0 ? newCount : 0
       });
+      if(newCount === 0) {
+        this.setState({
+          countdownStatus: 'stopped'
+        });
+      }
     },1000);
   },
   handleSetCountdown: function(seconds) {
