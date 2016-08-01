@@ -7,11 +7,13 @@ var Nav = require('Nav');
 var Main = (props) => {
   return (
     <div>
-      <div >
-          <Nav/>
-          {/*render children here*/}
-          {props.children}
-      </div>
+      <Nav/>
+        <div className="row">
+          <div className="column small-centered medium-6 large-4">
+            {/*render children here*/}
+            {props.children}
+          </div>
+        </div>
     </div>
   );
 }

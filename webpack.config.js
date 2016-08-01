@@ -30,6 +30,7 @@ module.exports =  {
       CountDown: 'app/components/CountDown.jsx',
       ErrorModal: 'app/components/ErrorModal.jsx',
       Clock: 'app/components/Clock.jsx',
+      CountDownForm: 'app/components/CountDownForm.jsx',
       applicationStyles: 'app/styles/app.scss'
     },
     //files we want to process
