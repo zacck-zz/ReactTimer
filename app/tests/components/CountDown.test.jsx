@@ -31,7 +31,7 @@ describe('CountDown', () =>{
     });
   });
 
-  describe('checkNegative seconds ', ()=>{
+  describe('checkNegative seconds ', ()=> {
     /*use the done argument to do async tests*/
     it('it should not set the seconds to a negative value', (done) => {
       var countdown = TestUtils.renderIntoDocument(<CountDown/>);
